@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td , th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot { 
+            background-color: rgb(74, 74, 74);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(74, 74, 74) ;
+        }
+
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(148, 153, 153);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: rgb(185, 188, 193);
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
+         THEAD (CABEÇA)
+            TR, TD, TH
+        TBODY (CORPO)
+            TR, TD, TH
+        TFOOT RODAPÉ)
+         TR, TD, TH
+    -->
+         <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+
+            </thead>
+            <body>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 973 194</td>
+               </tr>
+               <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 322 691	</td>
+               </tr>
+               <tr>
+                    <td>Rio de janeiro</td>
+                    <td class="num">17 219 679</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 850 513</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 824 665</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 229 915</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 539 029</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                     <td class="num">9 233 656</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 664 306</td>
+                </tr>
+                <tr>
+                    <td> Santa Catarina</td>
+                    <td class="num">8 058 441</td>
+                </tr>
+                <tr>
+                    <td> Goiás</td>
+                    <td class="num">7 350 483</td>
+                </tr>
+                <tr>
+                    <td> Maranhão</td>
+                    <td class="num">7 010 960</td>
+                </tr>
+                <tr>
+                    <td> Amazonas </td>
+                    <td class="num">4 281 209 </td>
+                </tr>
+                <tr>
+                    <td> Paraíba </td>
+                    <td class="num">4 145 040</td>
+                </tr>
+                <tr>
+                    <td>  Espírito Santo</td>
+                    <td class="num"> 4 102 129</td>
+                </tr>
+                <tr>
+                    <td> Mato Grosso </td>
+                    <td class="num">3 836 399 </td>
+                </tr>
+                <tr>
+                    <td> Rio Grande do Norte</td>
+                    <td class="num">3 446 071 </td>
+                </tr>
+                <tr>
+                    <td>  Piauí</td>
+                    <td class="num">3 375 646 </td>
+                </tr>
+                <tr>
+                    <td>Alagoas </td>
+                    <td class="num">3 220 104 </td>
+                </tr>
+                <tr>
+                    <td> Distrito Federal </td>
+                    <td class="num">2 982 818 </td>
+                </tr>
+                <tr>
+                    <td>  Mato Grosso do Sul</td>
+                    <td class="num">2 901 895 </td>
+                </tr>
+                <tr>
+                    <td> Sergipe</td>
+                    <td class="num">2 291 077 </td>
+                </tr>
+                <tr>
+                    <td> Rondônia </td>
+                    <td class="num">1 746 227 </td>
+                </tr>
+                <tr>
+                    <td> Tocantins </td>
+                    <td class="num"> 1 577 342</td>
+                </tr>
+                <tr>
+                    <td> Acre</td>
+                    <td class="num"> 880 631</td>
+                </tr>
+                <tr>
+                    <td> Amapá </td>
+                    <td class="num">802 837 </td>
+                </tr>
+                <tr>
+                    <td> Roraima </td>
+                    <td class="num">716 793 </td>
+                </tr>
+               
+            </body>
+            <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>212 583 750</strong></td>
+
+            </tfoot>
+         </table>
+         <p>Esta é uma lista da população das unidades federativas do Brasil, segundo dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE).
+
+Em 1º de agosto de 2022, data de referência[1][2] do censo brasileiro de 2022, os cinco estados mais populosos do Brasil contiveram um pouco mais da metade da população nacional. As dez unidades federativas menos populosas contiveram menos de um décimo da população total. São Paulo, o estado mais populoso, teve mais habitantes do que as 15 unidades federativas menos populosas juntas, e Roraima, o estado menos populoso, teve uma população menor do que qualquer um dos 27 municípios mais populosos do Brasil.</p>
+<p>Demografia do Brasil é um domínio de estudos e conhecimentos sobre as características demográficas da população no território brasileiro. O Brasil possuía 203 080 756 habitantes em 1 de agosto de 2022, segundo o censo demográfico do Brasil de 2022, realizado pelo Instituto Brasileiro de Geografia e Estatística (IBGE), destacando-se naquele ano, como a sétima nação mais populosa do planeta.[1]
+
+Os indicadores demográficos e as características da população no Brasil são verificadas diretamente por meio de operações censitárias realizadas pela primeira vez em 1872 e, desde sua criação em 1936, a cada dez anos pelo IBGE. No censo demográfico brasileiro, a população é contada em todo o território do Brasil e os resultados são usados pelo governo no desenvolvimento de políticas públicas.[2][3]</p>
+<p>A distribuição populacional no Brasil é bastante desigual, havendo concentração da população nas zonas litorâneas, especialmente das regiões Sudeste e Nordeste. Outro núcleo importante é a região Sul. Centro-Oeste e Norte constituem as regiões menos povoadas.
+
+O Brasil apresenta uma baixa densidade demográfica — apenas 23,8 habitantes por quilômetro quadrado[4], inferior à média dos países do mundo (60 habitantes/km2), menor que a dos EUA (35 habitantes/km2) e bem menor que a de países intensamente povoados, como o Japão (330 habitantes por quilômetro quadrado).</p>
+<p>Taxa de mortalidade infantil
+O Brasil apresenta uma taxa de mortalidade infantil de 13,31 mortes em cada mil nascimentos [9](estimativa para 2022). No entanto, há variações nessa taxa segundo as regiões e as camadas populacionais. O Norte e o Nordeste têm os maiores índices de mortalidade infantil, que diminuem na região Sul. Com relação às condições de vida, pode-se dizer que a mortalidade infantil é menor entre a população de maiores rendimentos, sendo provocada sobretudo por fatores endógenos. Já a população brasileira de menor renda apresenta as características típicas da mortalidade infantil tardia.</p>
+<p>onforme dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE)[10], a taxa média de fecundidade no Brasil era de 1,57 filho por mulher em 2023, semelhante à dos países desenvolvidos e abaixo da taxa de reposição populacional, que é de 2,1 filhos por mulher – duas crianças substituem os pais e a fração 0,1 é necessária para compensar os indivíduos que morrem antes de atingir a idade reprodutiva. Esse índice sofre variações, caindo entre as mulheres de etnia branca e elevando-se entre as pardas. Tal variação está relacionada ao nível socioeconômico desses segmentos populacionais; em geral, a população parda concentra-se nas camadas menos favorecidas social e economicamente, levando-se em conta a renda, a ocupação e o nível educacional, entre outros fatores.
+
+Há também variações regionais: as taxas são menores no Sudeste (1,48 filho por mulher), no Sul (1,56 filho por mulher) e no Nordeste (1,56 filho por mulher). As regiões Região Norte (1,83 filho por mulher) e Centro-Oeste 1,71 filho por mulher, apresentam as maiores taxas de fecundidade do país, ainda assim abaixo da média mundial.
+
+Expectativa de vida
+No Brasil, a expectativa de vida está em torno de 76 anos para os homens e 78 para as mulheres,[9] conforme estimativas para 2010. Dessa forma, esse país se distancia das nações menos desenvolvidas, em que essa expectativa não alcança 50 anos (Mauritânia, Guiné, Níger), mas ainda não alcança o patamar das nações desenvolvidas, onde a expectativa de vida ultrapassa os 80 anos (Noruega, Suécia).</p>
+</body>
+</html>
